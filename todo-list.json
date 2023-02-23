@@ -1,0 +1,26 @@
+[
+    {
+        "toDo": "HTML",
+        "done": true
+    },
+    {
+        "toDo": "CSS",
+        "done": true
+    },
+    {
+        "toDo": "Responsive Design",
+        "done": true
+    },
+    {
+        "toDo": "Javascript",
+        "done": true
+    },
+    {
+        "toDo": "PHP",
+        "done": false
+    },
+    {
+        "toDo": "Laravel",
+        "done": false
+    }
+]

@@ -1,0 +1,94 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+body{
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Rubik';
+}
+
+body{
+    background-color: #05254B;
+}
+
+/* TESTI */
+h1{
+    text-align: center;
+
+    margin-top: 2rem;
+
+    font-size: 8rem;
+    font-weight: 100;
+
+    color: #D3D3D3;
+}
+
+/* LISTA */
+.list-box{
+    width: 30%;
+
+    margin: 0 auto;
+    padding: 2rem;
+    
+    border-radius: 5px;
+
+    background-color: #FFFFFF;
+}
+
+.list-box .item{
+    padding: 1rem 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.list-box .item:first-child{
+    padding: 0 0.5rem 1rem;
+}
+
+.list-box .item:last-child{
+    padding: 1rem 0.5rem 0;
+
+    border: none;
+}
+
+/* INPUT BOX */
+.input-box{
+    width: 30%;
+
+    margin: 1rem auto;
+
+    font-size: 1.2rem
+}
+
+input{
+    width: 50rem;
+
+    margin-right: 5px;
+
+    padding: 0.5rem;
+}
+
+.add-button{
+    font-size: 1.2rem;
+
+    border: 2px solid #FCD80D;
+
+    color: #FCD80D;
+    background-color: #05254B;
+}
+
+.add-button:hover{
+    border-color: #FFFFFF;
+
+    color: #05254B;
+    background-color: #FFFFFF;
+}
