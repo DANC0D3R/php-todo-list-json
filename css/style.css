@@ -60,6 +60,13 @@ h1{
     border: none;
 }
 
+/* TODO COMPLETATO */
+.list-box .item.done{
+    font-weight: bold;
+
+    text-decoration: line-through;
+}
+
 /* INPUT BOX */
 .input-box{
     width: 30%;
