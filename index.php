@@ -40,10 +40,10 @@
                 </div>
             </div>
             <!-- Sezione inserimento nuovo elemento -->
-            <div class="input-box d-flex">
-                <input class="ps-2 rounded" type="text" v-model="language" placeholder='Inserisci elemento...'>
-                <button class="btn btn-primary add-button">Inserisci</button>
-            </div>
+            <form class="input-box d-flex" @submit.prevent>
+                <input class="ps-2 rounded" type="text" v-model="newToDo" placeholder='Inserisci elemento...'>
+                <button type="submit" class="btn btn-primary add-button" @click="addToDo()">Inserisci</button>
+            </form>
         </div>
         <!-- Javascript -->
         <script type="text/javascript" src="./js/script.js"></script>    
