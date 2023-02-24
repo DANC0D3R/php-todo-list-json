@@ -60,6 +60,10 @@ h1{
     border: none;
 }
 
+p{
+    cursor: pointer;
+}
+
 /* TODO COMPLETATO */
 .list-box .item.done{
     font-weight: bold;

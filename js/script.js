@@ -29,6 +29,18 @@ createApp({
                 this.newToDo= '';
             });
         },
+        doneFlag(toDo, index) {
+            toDo.done = !toDo.done;
+            axios.post('./update.php', {
+                updateType: 'doneFlag',
+                index: index,
+            }, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+            .then((response) => { console.log(response); });
+        },
     },
     created() {
         this.readData();

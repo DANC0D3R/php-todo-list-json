@@ -32,7 +32,7 @@
             <h1>ToDo List</h1>
             <!-- Lista -->
             <div class="list-box">
-                <div v-for="item in toDoList" class="item d-flex justify-content-between" :class="{ done: item.done }">
+                <div v-for="item, index in toDoList" class="item d-flex justify-content-between" :class="{ done: item.done }" @click="doneFlag(item,index)">
                     <p>{{ item.toDo }}</p>
                     <button class="delete m-1 btn btn-square btn-danger">
                         <i class="fa fa-trash"></i>
