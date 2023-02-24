@@ -9,7 +9,7 @@ createApp({
         }
     },
     methods: {
-        readData() {
+        getData() {
             axios.get('./read.php')
             .then((response) => {
                 this.toDoList = response.data.toDoList;
@@ -25,8 +25,21 @@ createApp({
             })
             .then((response) => {
                 console.log(response);
-                this.readData();
+                this.getData();
                 this.newToDo= '';
+            });
+        },
+        deleteToDo(index) {
+            axios.post('./delete.php', {
+                index: index
+            }, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+            .then((response) => {
+                console.log(response);
+                this.getData();
             });
         },
         doneFlag(toDo, index) {
@@ -43,6 +56,6 @@ createApp({
         },
     },
     created() {
-        this.readData();
+        this.getData();
 	}
 }).mount('#app');

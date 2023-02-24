@@ -32,9 +32,9 @@
             <h1>ToDo List</h1>
             <!-- Lista -->
             <div class="list-box">
-                <div v-for="item, index in toDoList" class="item d-flex justify-content-between" :class="{ done: item.done }" @click="doneFlag(item,index)">
-                    <p>{{ item.toDo }}</p>
-                    <button class="delete m-1 btn btn-square btn-danger">
+                <div v-for="item, index in toDoList" class="item d-flex justify-content-between" :class="{ done: item.done }">
+                    <p class="toDo" @click="doneFlag(item,index)">{{ item.toDo }}</p>
+                    <button class="delete m-1 btn btn-square btn-danger"  @click="deleteToDo(index)">
                         <i class="fa fa-trash"></i>
                     </button>
                 </div>
