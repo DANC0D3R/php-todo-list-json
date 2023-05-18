@@ -32,3 +32,6 @@ Bonus
 1. Permettere di segnare un task come completato facendo click sul testo
 2. Permettere il toggle del task (completato/non completato)
 3. Abilitare l'eliminazione di un task
+
+<h1 align="center">Anteprima<h1>
+<div align="center"><img src="Anteprima.png" width="800">
